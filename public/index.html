@@ -1,14 +1,78 @@
-1  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>RIPE TOMATOES</title>
 </head>
+
 <body>
-    <h2>Hello World</h2>
+    
+    <header>
+        <h1>MOVIE & SHOWS</h1>
+    </header>
+
+    <main>
+
+        <form>
+
+            <input type="text" id="title" placeholder="Name of Movie or Show">
+            <input type="text" id="genre" placeholder="Insert Genre Here">
+            <input type="text" id="img" placeholder="Insert ImageURL">
+            <input type="text" id="char" placeholder="Insert Fave Character">
+
+            <section id="ratings">
+
+                <p id="rater">RATE MOVIE or SHOW</p>
+
+                <div id="radio">
+
+                    <label for="one">
+
+                        <input type="radio" name="ratings" value="1" id="one"> 1
+
+                    </label>
+
+                    <label for="two">
+
+                        <input type="radio" name="ratings" value="2" id="two"> 2
+
+                    </label>
+
+                    <label for="three">
+
+                        <input type="radio" name="ratings" value="3" id="three"> 3
+
+                    </label>
+
+                    <label for="four">
+
+                        <input type="radio" name="ratings" value="4" id="four"> 4
+
+                    </label>
+
+                    <label for="five">
+
+                        <input type="radio" name="ratings" value="5" id="five"> 5
+
+                    </label>
+
+                </div>
+
+            </section>
+
+            <button>ADD</button>
+
+        </form>
+
+        <section id="container"></section>
+
+    </main>
     <script src="main.js"></script>
 </body>
+
 </html>

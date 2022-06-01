@@ -1,0 +1,16 @@
+.LIGHT-MODE {
+    background-color: white;
+}
+
+header.LIGHT-MODE {
+    color:#C14953
+}
+
+button.LIGHT-MODE {
+    background: #C14953;
+}
+
+.btns-container > button.LIGHT-MODE {
+    width: 20px;
+    background: #C14953;
+}

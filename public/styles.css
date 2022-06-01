@@ -1,75 +1,149 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background-color: #547AA5;
+    background-color: #685044;
 }
 
 header {
-    color: white;
-    height: 80px;
-    display: flex;
-    justify-content: center;
+    height: 80px; 
+    display: flex; 
+    justify-content: space-evenly; 
     align-items: center;
-    font-size: 40px;
+    color: white;
+    font-size: 50px;
+    
 }
 
-main {
+/* .search {
     display: flex;
+
+}
+
+#searchBtn {
+    width: 60px;
+    height: 30px;
+} */
+
+main {
+    display: flex; 
     justify-content: center;
 }
 
 form {
-    background-color: white;
-    width: 40vw;
-    height: 60vh;
+    width: 70vw;
+    height: 70vh;
+    background-color: #E6B89C;
     position: relative;
-    display: flex;
+    display: flex; 
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-evenly; 
     align-items: center;
-    margin: 5px;
-    border-radius: 10%;
+    margin: 30px;
+}
+
+#trailers {
+    width: 70vw;
+    height: 100vh;
+    background-color: #E6B89C;
+    /* position: relative; */
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 30px;
+    padding: 1%;
 }
 
 button {
-    background-color: #547AA5;
-    color: white;
-    width: 75px;
+    background-color: #417B5A;
+    width: 120px;
     height: 25px;
+    color: white;
     border: none;
     margin: 5px;
+    border-radius: 20%;
 }
 
-input[type="text"] {
+#genre {
+    width: 85%;
+    align-items: center;
+    border-bottom: 2px solid #232323;
+    color: #232323;
+    background-color: blanchedalmond;
+    height: 30px;
+    border: none;
+}
+
+input[type='text'] {
     width: 85%;
     height: 30px;
-    color: black;
+    border: none;
+    border-bottom: 2px solid #232323;
+    color: #232323;
+    background-color: blanchedalmond;
 }
 
-#ratings {
+#ratings-container {
     width: 85%;
 }
 
-#radio {
+#radio-container {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-#rater {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3%;
-}
-
-#container {
+#movies-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+.movie-cover {
+    width: 200px; 
+    height: 300px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.movie-card {
+    background-color: #E6B89C;
+    color: black;
+    width: 200px;
+    height: 500px;
+    margin: 3%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 12px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.movie-title {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.movie-rating {
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+.btns-container {
+    width: 100%; 
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5px;
+}
+
+.btns-container > button {
+    width: 20px;
 }

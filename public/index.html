@@ -1,78 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
-    <title>RIPE TOMATOES</title>
+    <link rel="stylesheet" href="themes.css">
+    <title>Movie List</title>
 </head>
-
 <body>
-    
     <header>
+        <button class="themes">DARK-MODE</button>
         <h1>MOVIE & SHOWS</h1>
+        <button class="themes">LIGHT-MODE</button>
+        <!-- <section class="search">
+            <input type="text" id="request">
+            <button id="searchBtn">SEARCH</button>
+        </section> -->
     </header>
-
     <main>
 
-        <form>
+    <form>
+        <h2>FILL ME OUT</h2>
+        <input type='text' id="title" placeholder="What's the movie's title?"/>
+        <!-- <input type='text' id="genre" placeholder="What is the genre?"/> -->
+        <select id="genre" placeholder="What is the genre?">
+            <option value="Adventure">Adventure</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Children">Children</option>
+            <option value="Rom-Com">Rom-Com</option>
+            <option value="Anime">Anime</option>
+            <option value="Hero">Superhero</option>
+            <option value="Sitcom">Sitcom</option>
+            <option value="K-Drama">K-Drama</option>
+            <option value="Drama">Drama</option>
+            <option value="Horror">Horror</option>
+            <option value="Crime">Crime</option>
+            <option value="Documentary">Documentary</option>
+            <option value="Sports">Sports</option>
+            <option value="True">True-Story</option>
+            <option value="Sci-Fi">Sci-Fi</option>
+            <option value="Other">Other</option>
+        </select>
+        <input type='text' id="char" placeholder="Who is your favorite character?"/>
+        <input type='text' id="img" placeholder="Paste an image URL"/>
+        <section id="ratings-container">
+            <p>Rate the movie:</p>
+            <div id="radio-container">
+                <label for="one">
+                    <input type="radio" name="ratings" value="1" id="one"/> 1
+                </label>
+                <label for="two">
+                    <input
+                        type="radio" name="ratings" value="2" id="two"/> 2
+                </label>
+                <label for="three">
+                    <input
+                        type="radio" name="ratings" value="3" id="three"/> 3
+                </label>
+                <label for="four">
+                    <input type="radio" name="ratings" value="4" id="four"/> 4
+                </label>
+                <label for="five">
+                    <input
+                        type="radio" name="ratings" value="5" id="five"/> 5
+                </label>
+            </div>
+        </section>
+        <button>ADD</button>
+    </form>
 
-            <input type="text" id="title" placeholder="Name of Movie or Show">
-            <input type="text" id="genre" placeholder="Insert Genre Here">
-            <input type="text" id="img" placeholder="Insert ImageURL">
-            <input type="text" id="char" placeholder="Insert Fave Character">
-
-            <section id="ratings">
-
-                <p id="rater">RATE MOVIE or SHOW</p>
-
-                <div id="radio">
-
-                    <label for="one">
-
-                        <input type="radio" name="ratings" value="1" id="one"> 1
-
-                    </label>
-
-                    <label for="two">
-
-                        <input type="radio" name="ratings" value="2" id="two"> 2
-
-                    </label>
-
-                    <label for="three">
-
-                        <input type="radio" name="ratings" value="3" id="three"> 3
-
-                    </label>
-
-                    <label for="four">
-
-                        <input type="radio" name="ratings" value="4" id="four"> 4
-
-                    </label>
-
-                    <label for="five">
-
-                        <input type="radio" name="ratings" value="5" id="five"> 5
-
-                    </label>
-
-                </div>
-
-            </section>
-
-            <button>ADD</button>
-
-        </form>
-
-        <section id="container"></section>
+    <section id="movies-container"></section>
+    <section id="trailers">
+        <h1>NEW RELEASES</h1>
+        <p>MAY 27 | Stranger Things: Season Four</p>
+        <iframe width="360" height="215" src="https://www.youtube.com/embed/mVsJXiI60a0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>JULY 8 | THOR: Love and Thunder </p>
+        <iframe width="360" height="215" src="https://www.youtube.com/embed/Go8nTmfrQd8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
 
     </main>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="main.js"></script>
 </body>
-
 </html>
